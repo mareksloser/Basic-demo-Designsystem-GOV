@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-wizard-item.d.js","sourceRoot":"","sources":["../../../../../../src/components/gov-wizard/gov-wizard-item.d.tsx"],"names":[],"mappings":"","sourcesContent":["export interface GovWizardItemChangeEvent {\n\topen: boolean\n\telement: HTMLGovWizardItemElement\n}\n"]}

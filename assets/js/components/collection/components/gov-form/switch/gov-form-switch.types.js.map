@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-form-switch.types.js","sourceRoot":"","sources":["../../../../../../../src/components/gov-form/switch/gov-form-switch.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../../types/event.types\"\n\nexport interface FormSwitchEvent extends GovBaseEvent {\n\tchecked: boolean,\n\tvalue: string\n}\n"]}

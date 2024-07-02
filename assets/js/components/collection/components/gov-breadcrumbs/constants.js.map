@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sourceRoot":"","sources":["../../../../../../src/components/gov-breadcrumbs/constants.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,gBAAgB,GAAG;EAC/B,IAAI,EAAE,iBAAiB;CACvB,CAAA","sourcesContent":["export const BreadcrumbsClass = {\n\troot: 'gov-breadcrumbs',\n}\n"]}

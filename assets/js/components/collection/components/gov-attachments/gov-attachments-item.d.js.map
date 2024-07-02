@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-attachments-item.d.js","sourceRoot":"","sources":["../../../../../../src/components/gov-attachments/gov-attachments-item.d.tsx"],"names":[],"mappings":"","sourcesContent":["export interface GovAttachmentsItemChangeEvent {\n\topen: boolean\n\telement: HTMLGovAttachmentsItemElement\n}\n"]}

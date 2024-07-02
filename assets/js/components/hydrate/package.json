@@ -1,0 +1,6 @@
+{
+  "name": "@gov-design-system-ce/components/hydrate",
+  "description": "core component hydration app.",
+  "main": "index.js",
+  "types": "index.d.ts"
+}

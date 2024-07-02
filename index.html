@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="cs" class="h-full scroll-smooth scrollbar-fix">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design systém - Tailwind</title>
+
+    <link href="./assets/css/styles.css" rel="stylesheet" >
+
+</head>
+<body class="gov-bg--secondary-300">
+    <div id="page">
+        <header class="top-0 left-0 w-full fixed z-[200] border-b border-secondary-500 [ print:hidden ]">
+            <div class="top-header bg-primary text-secondary-100">
+                <div class="gov-container">
+                    <div class="flex flex-row justify-between items-center pt-2.5 pb-2.5 min-h-[44px] [ sm:pt-2.5 sm:pb-2.5 ][ lg:pr-[55px] ]">
+                        <div class="top-header__main">
+                            <nav aria-label="Modulová navigace" class="navigation">
+                                <ul class="gov-list--plain navigation__menu">
+                                    <li class="navigation__item">
+                                        <a href="#" title="Hlavní nabídka" class="navigation__link">Hlavní nabídka</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" title="HUMPO" class="navigation__link">HUMPO</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" title="Správa krizových situací" class="navigation__link">Správa krizových situací</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" title="Reporting" class="navigation__link">Reporting</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" title="Redakční systém" class="navigation__link">Redakční systém</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="top-header__extra">
+                            <gov-button wcag-label="What exactly happens when you click?" variant="primary" type="link" size="m" inverse="true" href="#">Přihlásit</gov-button>
+
+                            <gov-dropdown position="right">
+                                <gov-button variant="primary" size="m" type="link" inverse="true" wcag-label="What exactly happens when you click?" right-icon="basic/chevron-down">EN<gov-icon type="basic" name="chevron-down" slot="right-icon"></gov-icon></gov-button>
+
+                                <ul slot="list">
+                                    <li><gov-button variant="secondary" size="m" type="base" wcag-label="CZ">CZ</gov-button></li>
+                                    <li><gov-button variant="secondary" size="m" type="base" wcag-label="UK">UK</gov-button></li>
+                                    <li><gov-button variant="secondary" size="m" type="base" wcag-label="RU">RU</gov-button></li>
+                                </ul>
+                            </gov-dropdown>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-header bg-neutral-white">
+                <div class="gov-container">
+                    <div class="flex flex-row justify-between items-center gap-8 pt-2.5 pb-2.5 min-h-[60px] [ sm:pt-2.5 sm:pb-2.5 ][ lg:pr-[55px] ]">
+                        <div class="main-header__image-nav">
+                            <div class="xl:hidden block">
+                                <gov-button wcag-label="Open mobile menu" variant="primary" type="outlined" size="m" class="hamburger-nav hamburger-nav--open" data-overflow="hamburger-nav__mobile-top-nav">
+                                    <gov-icon type="basic" name="grid-3x3-gap-fill" slot="left-icon"></gov-icon>
+                                </gov-button>
+
+                                <gov-button wcag-label="Close opend mobile menu" variant="primary" type="base" size="m" class="hamburger-nav hamburger-nav--close" data-overflow="hamburger-nav__mobile-top-nav">
+                                    <gov-icon type="basic" name="x-lg" slot="left-icon"></gov-icon>
+                                </gov-button>
+                            </div>
+
+                            <a href="./" class="table no-underline">
+                                <span class="flex items-center gap-2">
+                                    <img src="./assets/image/lev.svg" width="48" height="48" alt="">
+                                    <span class="m-0 text-xl text-primary-600 font-medium">NPKŘ</span>
+
+                                    <gov-chip class="relative -top-2 gov-chip" size="xs" variant="success" inverse="">beta</gov-chip>
+                                </span>
+                            </a>
+
+                            <nav aria-label="Hlavní navigace" class=" navigation">
+                                    <ul class="gov-list--plain navigation__menu">
+                                        <li class="navigation__item">
+                                            <a href="" title="Úvod" class="navigation__link is-active">Úvod</a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="" title="Krizové situace" class="navigation__link">Krizové situace</a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="" title="Aktuality" class="navigation__link">Aktuality</a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="" title="Co dělat když" class="navigation__link">Co dělat když</a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="" title="Další odkazy" class="navigation__link">Další odkazy</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            <div class="xl:hidden block ">
+                                <gov-button wcag-label="What exactly happens when you click?" variant="primary" type="base" size="m" class="toggleSearch">
+                                    <gov-icon type="basic" name="search" slot="left-icon"></gov-icon>
+                                </gov-button>
+                            </div>
+                        </div>
+
+                        <div class="main-header__extra ">
+                            <gov-form-control class="hidden xl:block">
+                                <gov-form-group>
+                                    <gov-form-search variant="primary">
+                                        <gov-form-input slot="input" placeholder="Hledat na webu" size="s"></gov-form-input>
+
+                                        <gov-button variant="primary" size="s" type="solid" slot="button"><gov-icon type="basic" name="search" slot="left-icon"></gov-icon></gov-button>
+                                    </gov-form-search>
+                                </gov-form-group>
+                            </gov-form-control>
+
+                            <div class="xl:hidden block">
+                                <gov-button wcag-label="What exactly happens when you click?" variant="primary" type="base" size="m" class="hamburger-nav hamburger-nav--open" data-overflow="hamburger-nav__mobile-nav">
+                                    <gov-icon type="basic" name="list" slot="left-icon"></gov-icon>
+                                </gov-button>
+
+                                <gov-button wcag-label="Close opend mobile menu" variant="primary" type="base" size="m" class="hamburger-nav hamburger-nav--close" data-overflow="hamburger-nav__mobile-nav">
+                                    <gov-icon type="basic" name="x-lg" slot="left-icon"></gov-icon>
+                                </gov-button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hamburger-nav--modal hamburger-nav__mobile-top-nav">
+                        <nav aria-label="Modulová navigace" class="navigation navigation__mobile modal-content">
+                            <ul class="gov-list--plain navigation__menu navigation__menu--mobile-top-nav">
+                                <li class="navigation__item">
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Úvod</span>
+                                    </a>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <span class="tile-mobile__label">Aktuální krizové situace</span>
+
+                                    <gov-accordion variant="secondary" size="xs" no-border="true">
+                                        <gov-accordion-item variant="secondary" size="xs" >
+                                            <ul class="tile-mobile__content-links">
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu">Rozcestník podpory občanů</a></li>
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu#section-faq">Nejčastěji se ptáte</a></li>
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu#section-most-read">Nejčtenější články a návody</a></li>
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu/clanky-a-navody">Všechny články a návody</a></li>
+                                            </ul>
+
+                                            <gov-icon type="basic" name="question-circle-fill" slot="icon"></gov-icon>
+
+                                            <h2 slot="label">Požár Město Datum</h2>
+                                        </gov-accordion-item>
+
+                                        <gov-accordion-item variant="secondary" size="xs" no-border="true">
+                                            <ul class="tile-mobile__content-links">
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu">Rozcestník podpory občanů</a></li>
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu#section-faq">Nejčastěji se ptáte</a></li>
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu#section-most-read">Nejčtenější články a návody</a></li>
+                                                <li class="navigation__item"><a class="tile-mobile" href="/podpora-obcanu/clanky-a-navody">Všechny články a návody</a></li>
+                                            </ul>
+
+                                            <gov-icon type="basic" name="question-circle-fill" slot="icon"></gov-icon>
+
+                                            <h2 slot="label">Požár Město Datum</h2>
+                                        </gov-accordion-item>
+                                    </gov-accordion>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <span class="tile-mobile__label">Správa krizových situací</span>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Správa krizových situací </span>
+                                    </a>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <span class="tile-mobile__label">HUMPO</span>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Evakuace</span>
+                                    </a>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Přechodné pobyty</span>
+                                    </a>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Psychosociální pomoc</span>
+                                    </a>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <span class="tile-mobile__label">Reporting</span>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Přehled dashboardů</span>
+                                    </a>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>TERINOS</span>
+                                    </a>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Další odkaz</span>
+                                    </a>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <span class="tile-mobile__label">Webové stránky</span>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Přejít na webové stránky</span>
+                                    </a>
+
+                                    <a class="tile-mobile" href="/">
+                                        <gov-icon type="basic" name="question-circle" slot="icon"></gov-icon>
+                                        <span>Redakční systém</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="hamburger-nav--modal hamburger-nav__mobile-nav">
+                        <div class="modal-content">
+                            sadasdasdads
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pt-[113px] min-h-screen [ print:pt-0 ]">
+            <div class="gov-container">
+                <main>
+                    <h1 class="mt-16 mb-14 text-4xl text-center">Tailwind <strong>Design systém</strong></h1>
+
+                    <div class="gov-layout">
+                        <section class="gov-layout__section gov-layout__section-stretch">
+                            <div class="gov-layout-column max-w-[712px] mx-auto">
+                                <div class="flex flex-col gap-20">
+                                    asdad
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer class="py-12 mt-20 bg-secondary-800 text-secondary-500 [ lg:mt-28 lg:py-14 ] [ print:hidden ]">
+            <div class="gov-container flex flex-col gap-10 pl-4 pr-4 [ lg:gap-12 ]">
+                <div class="flex justify-between">
+                    <ul class="gov-list--plain flex flex-wrap gap-8 [ lg:flex-row lg:gap-20 ]">
+                        <li>
+                            <h5 class="mb-4 text-xl">Mohlo by se hodit</h5>
+
+                            <ul class="gov-list--plain flex flex-col gap-2">
+                                <li>
+                                    <a href="https://gov.cz" target="_blank" class="gov-link inline-flex items-center gap-1 w-auto h-10 text-s text-secondary-500" rel="noreferrer">gov.cz</a>
+                                </li>
+                                <li>
+                                    <a href="https://chcidatovku.gov.cz/identita-obcana#zalozeni-identita-obcana" target="_blank" class="gov-link inline-flex items-center gap-1 w-auto h-10 text-s text-secondary-500" rel="noreferrer">Chci identitu</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.identitaobcana.cz" target="_blank" class="gov-link inline-flex items-center gap-1 w-auto h-10 text-s text-secondary-500" rel="noreferrer">Portál identity občana</a>
+                                </li>
+                                <li>
+                                    <a href="https://chcidatovku.gov.cz/identita-obcana#zalozeni-identita-obcana" target="_blank" class="gov-link inline-flex items-center gap-1 w-auto h-10 text-s text-secondary-500" rel="noreferrer">Chci datovku</a>
+                                </li>
+                                <li>
+                                    <a href="https://info.mojedatovaschranka.cz/info/cs/" target="_blank" class="gov-link inline-flex items-center gap-1 w-auto h-10 text-s text-secondary-500" rel="noreferrer">Přihlášení do datové schránky</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5 class="mb-4 text-xl">Informace</h5>
+
+                        </li>
+                        <li>
+                            <h5 class="mb-4 text-xl">Máte dotaz? Napište nám</h5>
+
+                        </li>
+                    </ul>
+
+                    <gov-button variant="secondary" type="outlined" inverse="" wcag-label="Na začátek stránky" loading="undefined" hoverable="" size="m" class="gov-button gov-button--w-icon js--scroll-up" >
+                        <gov-icon type="basic" name="chevron-up" slot="left-icon"></gov-icon>
+                    </gov-button>
+                </div>
+
+                <div class="flex flex-col gap-6 pt-6 border-t border-secondary-500 [ sm:items-center ] [ xl:flex-row xl:justify-between ]">
+                    <p class="text-xs">2024 © Digitální a informační agentura • Informace jsou poskytovány v souladu se zákonem č. 106/1999 Sb., o svobodném přístupu k informacím.</p>
+
+                    <div class="flex flex-col [ sm:flex-row ]">
+                        <span class="inline-block pr-4 mr-4 text-xs [ sm:border-r sm:border-secondary-600 ] [ xl:pr-6 xl:mr-6 ]">Verze po-2.0.6-2401.2</span>
+                        <span class="text-xs">Využit <a href="https://designsystem.gov.cz/" target="_blank">Design System gov.cz</a> verze 4.0</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div hidden class="hidden">
+            <gov-container></gov-container>
+            <gov-button></gov-button>
+            <gov-message></gov-message>
+            <gov-tooltip></gov-tooltip>
+            <gov-toast></gov-toast>
+            <gov-accordion></gov-accordion>
+            <gov-accordion-item></gov-accordion-item>
+            <gov-chip></gov-chip>
+            <gov-infobar></gov-infobar>
+            <gov-form-input></gov-form-input>
+            <gov-form-checkbox></gov-form-checkbox>
+            <gov-form-radio></gov-form-radio>
+            <gov-form-select></gov-form-select>
+            <gov-form-search></gov-form-search>
+            <gov-stepper></gov-stepper>
+            <gov-wizzard></gov-wizzard>
+            <gov-wizzard-item></gov-wizzard-item>
+        </div>
+    </div>
+
+
+    <script type="module" src="./assets/js/components/core/core.esm.js"></script>
+    <script nomodule src="./assets/js/components/core/core.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@layer base {
+  :root {
+    //--screen-mobile-width: #{$screen-mobile-width};
+    //--screen-tablet-width: #{$screen-tablet-width};
+    //--screen-desktop-width: #{$screen-desktop-width};
+    //--screen-wide-width: #{$screen-wide-width};
+
+    --gov-container-width: #{$container-width};
+    --gov-layout-content-width: #{$layout-content-width};
+    --gov-container-padding-mobile: #{$container-padding-mobile};
+
+    --gov-color-primary: #{$color-primary};
+    --gov-color-primary-100: #{$color-primary-100};
+    --gov-color-primary-200: #{$color-primary-200};
+    --gov-color-primary-300: #{$color-primary-300};
+    --gov-color-primary-400: #{$color-primary-400};
+    --gov-color-primary-500: #{$color-primary-500};
+    --gov-color-primary-600: #{$color-primary-600};
+    --gov-color-primary-700: #{$color-primary-700};
+    --gov-color-primary-800: #{$color-primary-800};
+    --gov-color-primary-900: #{$color-primary-900};
+
+    --gov-color-secondary: #{$color-secondary};
+    --gov-color-secondary-100: #{$color-secondary-100};
+    --gov-color-secondary-200: #{$color-secondary-200};
+    --gov-color-secondary-300: #{$color-secondary-300};
+    --gov-color-secondary-400: #{$color-secondary-400};
+    --gov-color-secondary-500: #{$color-secondary-500};
+    --gov-color-secondary-600: #{$color-secondary-600};
+    --gov-color-secondary-700: #{$color-secondary-700};
+    --gov-color-secondary-800: #{$color-secondary-800};
+    --gov-color-secondary-900: #{$color-secondary-900};
+
+    --gov-color-success: #{$color-success};
+    --gov-color-success-100: #{$color-success-100};
+    --gov-color-success-200: #{$color-success-200};
+    --gov-color-success-300: #{$color-success-300};
+    --gov-color-success-400: #{$color-success-400};
+    --gov-color-success-500: #{$color-success-500};
+    --gov-color-success-600: #{$color-success-600};
+    --gov-color-success-700: #{$color-success-700};
+
+    --gov-color-warning: #{$color-warning};
+    --gov-color-warning-100: #{$color-warning-100};
+    --gov-color-warning-200: #{$color-warning-200};
+    --gov-color-warning-300: #{$color-warning-300};
+    --gov-color-warning-400: #{$color-warning-400};
+    --gov-color-warning-500: #{$color-warning-500};
+    --gov-color-warning-600: #{$color-warning-600};
+    --gov-color-warning-700: #{$color-warning-700};
+
+    --gov-color-error: #{$color-error};
+    --gov-color-error-100: #{$color-error-100};
+    --gov-color-error-200: #{$color-error-200};
+    --gov-color-error-300: #{$color-error-300};
+    --gov-color-error-400: #{$color-error-400};
+    --gov-color-error-500: #{$color-error-500};
+    --gov-color-error-600: #{$color-error-600};
+
+    --gov-color-neutral-black: #{$color-neutral-black};
+    --gov-color-neutral-white: #{$color-neutral-white};
+  }
+}

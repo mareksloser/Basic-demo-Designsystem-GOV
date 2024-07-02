@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sourceRoot":"","sources":["../../../../../../src/components/gov-tag/constants.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,QAAQ,GAAG;EACvB,IAAI,EAAE,SAAS;CACf,CAAA","sourcesContent":["export const TagClass = {\n\troot: 'gov-tag',\n}\n"]}

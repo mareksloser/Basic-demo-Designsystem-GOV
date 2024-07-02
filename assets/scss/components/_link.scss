@@ -1,0 +1,8 @@
+$class: '.gov-link';
+
+a, #{$class} {
+
+  & > * {
+    color: inherit;
+  }
+}

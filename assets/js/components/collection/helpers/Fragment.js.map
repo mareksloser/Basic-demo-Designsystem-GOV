@@ -1,0 +1,1 @@
+{"version":3,"file":"Fragment.js","sourceRoot":"","sources":["../../../../../src/helpers/Fragment.tsx"],"names":[],"mappings":"AAAA,eAAe,CAAC,CAAC,EAAE,QAAQ,EAAE,EAAE,CAAC,CAAC,GAAG,QAAQ,CAAC,CAAA","sourcesContent":["export default (_, children) => [...children]\n"]}

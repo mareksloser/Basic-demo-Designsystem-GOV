@@ -1,0 +1,2 @@
+import{V as t}from"./p-ff7365ae.js";import{p as o}from"./p-03990da5.js";const a=o(t,["PRIMARY","SECONDARY","SUCCESS","ERROR","WARNING"]);var s;(function(t){t["TEXT"]="text";t["CHIP"]="chip"})(s||(s={}));var i;(function(t){t["HORIZONTAL"]="horizontal";t["VERTICAL"]="vertical"})(i||(i={}));const n={root:"gov-tabs",tabs:"gov-tabs__tabs",list:"gov-tabs__list",item:"gov-tabs__item",btn:"gov-tabs__btn"};const r={root:"gov-tabs-item",inner:"gov-tabs-item__inner"};export{r as T,n as a,s as b,a as c};
+//# sourceMappingURL=p-fa1e4aea.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-breadcrumbs.d.js","sourceRoot":"","sources":["../../../../../../src/components/gov-breadcrumbs/gov-breadcrumbs.d.tsx"],"names":[],"mappings":"","sourcesContent":["export interface GovBreadcrumbsChangeEvent {\n\topen: boolean\n\telement: HTMLGovBreadcrumbsElement\n}\n"]}

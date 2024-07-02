@@ -1,0 +1,61 @@
+$class: '.navigation';
+
+@layer components {
+  #{$class} {
+    @apply relative;
+
+    &__menu {
+
+      & > #{$class}__item {
+        @apply mb-0;
+      }
+
+      &--mobile-top-nav {
+        @apply flex flex-col gap-3;
+      }
+    }
+
+    &__item {
+      position: initial;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    &__link {
+      @apply relative block hover:text-primary focus:outline-0; // hover:text-secondary-600
+
+      &.is-active {
+        @apply text-secondary bg-secondary-100 border-b-3 border-primary;
+      }
+    }
+
+    &__mobile {
+      @apply hidden;
+    }
+
+    /*  DESKTOP layout
+    ------------------------------------------------------------------ */
+    @media screen and (min-width: $screen-xl) {
+
+      &__menu {
+        @apply flex flex-row items-center gap-8 h-max;
+      }
+
+      &__item {
+
+      }
+
+      &__link {
+        @apply h-max;
+      }
+    }
+
+    @media screen and (max-width: $screen-xl) {
+      &:not(&__mobile) {
+        @apply hidden;
+      }
+    }
+  }
+}

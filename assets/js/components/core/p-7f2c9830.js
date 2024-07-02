@@ -1,0 +1,2 @@
+import{u as o,a as t,b as a}from"./p-003e6cca.js";const s={bg:"#ecae1a",text:"#3b3b3b"};const c={bg:"#2362a2",text:"#fff"};const f={bg:"#c52a3a",text:"#fff"};const n=(s,f=c)=>{const n=["color: "+f.text,"background: "+f.bg,"font-size: 11px","padding: 2px 4px","border-radius: 3px","font-weight: 600"].join(";");if(t()||a()||o()){console.log("%cgov",n,s)}};const e=o=>{if(a()){n(o,s)}};const b=t=>{if(o()){n(t,f)}};export{b as a,e as g};
+//# sourceMappingURL=p-7f2c9830.js.map

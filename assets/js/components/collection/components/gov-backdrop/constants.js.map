@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sourceRoot":"","sources":["../../../../../../src/components/gov-backdrop/constants.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,aAAa,GAAG;EAC5B,IAAI,EAAE,cAAc;EACpB,EAAE,EAAE,kBAAkB;CACtB,CAAA","sourcesContent":["export const BackdropClass = {\n\troot: 'gov-backdrop',\n\tbg: 'gov-backdrop__bg',\n}\n"]}

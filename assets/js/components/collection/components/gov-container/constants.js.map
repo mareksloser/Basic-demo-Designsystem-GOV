@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.js","sourceRoot":"","sources":["../../../../../../src/components/gov-container/constants.tsx"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,cAAc,GAAG;EAC7B,IAAI,EAAE,eAAe;CACrB,CAAA","sourcesContent":["export const ContainerClass = {\n\troot: 'gov-container',\n}\n"]}

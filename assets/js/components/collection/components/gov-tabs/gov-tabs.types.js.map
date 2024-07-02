@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-tabs.types.js","sourceRoot":"","sources":["../../../../../../src/components/gov-tabs/gov-tabs.types.ts"],"names":[],"mappings":"","sourcesContent":["export interface GovTabControllerItem {\n\tlabel: string\n\tcontentIdentifier: string\n\ttriggerIdentifier: string\n\telement: HTMLGovTabsItemElement\n\tactive: boolean\n\tdefault: boolean\n}\n"]}

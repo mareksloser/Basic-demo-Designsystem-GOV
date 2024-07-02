@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-side-nav-item.d.js","sourceRoot":"","sources":["../../../../../../src/components/gov-side-nav/gov-side-nav-item.d.tsx"],"names":[],"mappings":"","sourcesContent":["export interface GovSideNavItemChangeEvent {\n\topen: boolean\n\telement: HTMLGovSideNavItemElement\n}\n"]}

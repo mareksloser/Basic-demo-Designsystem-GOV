@@ -1,0 +1,28 @@
+$class: 'header';
+
+@layer components {
+  .top-#{$class} {
+    &__extra {
+      @apply flex gap-6;
+    }
+
+    &__main {
+    }
+  }
+
+  .main-#{$class} {
+    &__image-nav {
+      @apply flex items-center gap-10 flex-1 justify-between xl:flex-none;
+    }
+
+    &__extra {
+      @apply flex gap-6;
+    }
+  }
+
+  /*  RESPONSE
+    ------------------------------------------------------------------ */
+  @media screen and (max-width: $screen-xl) {
+
+  }
+}

@@ -1,0 +1,9 @@
+/* The public path to your fonts. */
+$gov-font-path: '../fonts';
+$version: '0.0.1';
+
+@import '@gov-design-system-ce/fonts/lib/roboto';
+
+@import '@gov-design-system-ce/styles/lib/critical.css';
+@import '@gov-design-system-ce/styles/lib/styles.css';
+@import '@gov-design-system-ce/styles/lib/layout.css';

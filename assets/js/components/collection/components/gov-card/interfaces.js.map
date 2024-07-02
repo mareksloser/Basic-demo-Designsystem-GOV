@@ -1,0 +1,1 @@
+{"version":3,"file":"interfaces.js","sourceRoot":"","sources":["../../../../../../src/components/gov-card/interfaces.ts"],"names":[],"mappings":"","sourcesContent":["export interface GovCardChangeEvent {\n\topen: boolean\n\telement: HTMLGovCardElement\n}\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-infobar.types.js","sourceRoot":"","sources":["../../../../../../src/components/gov-infobar/gov-infobar.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../types/event.types\"\n\nexport interface InfobarEvent extends GovBaseEvent {\n\tref: HTMLGovInfobarElement\n}\n\n"]}

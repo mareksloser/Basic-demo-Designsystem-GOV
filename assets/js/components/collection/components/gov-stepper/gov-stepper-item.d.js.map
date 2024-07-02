@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-stepper-item.d.js","sourceRoot":"","sources":["../../../../../../src/components/gov-stepper/gov-stepper-item.d.tsx"],"names":[],"mappings":"","sourcesContent":["export interface GovStepperItemChangeEvent {\n\topen: boolean\n\telement: HTMLGovStepperItemElement\n}\n"]}

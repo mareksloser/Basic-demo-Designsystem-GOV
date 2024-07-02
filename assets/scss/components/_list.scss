@@ -1,0 +1,13 @@
+$class: '.gov-list';
+
+ul, ol, #{$class} {
+
+}
+
+#{$class} {
+  &--plain {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+const t={root:"gov-attachments",label:"gov-attachments__label",list:"gov-attachments__list"};const a={root:"gov-attachments-item",name:"gov-attachments-item__name",file:"gov-attachments-item__file",messages:"gov-attachments-item__messages"};export{t as A,a};
+//# sourceMappingURL=p-b72a7bed.js.map

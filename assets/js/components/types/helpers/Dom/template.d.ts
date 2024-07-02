@@ -1,0 +1,10 @@
+import { HTMLStencilElement } from '../../stencil-public-runtime';
+import { GovHost } from './template.types';
+export declare const prepareClasses: (classes: string[]) => string;
+export declare const slottedChildren: (host: HTMLStencilElement) => Node[];
+export declare const booleanString: (value: boolean) => string;
+export declare const govHost: (host: HTMLStencilElement) => GovHost;
+export declare const toBoolAttr: (value: boolean | string | number) => string;
+export declare const toOnOffAttr: (value: boolean | string | number) => string;
+export declare const toBoolAttrIfDefined: (value: boolean | string | number | undefined | null) => undefined | string;
+export declare const toOnOffAttrIfDefined: (value: boolean | string | number | undefined | null) => undefined | string;

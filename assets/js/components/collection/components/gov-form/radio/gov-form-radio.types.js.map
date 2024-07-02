@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-form-radio.types.js","sourceRoot":"","sources":["../../../../../../../src/components/gov-form/radio/gov-form-radio.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../../types/event.types\"\n\nexport interface FormRadioEvent extends GovBaseEvent {\n\tchecked: boolean,\n\tvalue: string\n}\n"]}

@@ -1,0 +1,1 @@
+{"file":"constants-ded92f8a.js","mappings":";;MAAa,SAAS,GAAG;EACxB,IAAI,EAAE,UAAU;EAChB;MAEY,aAAa,GAAG;EAC5B,IAAI,EAAE,eAAe;;;;;;","names":[],"sources":["../../../packages/core/src/components/gov-grid/constants.ts"],"sourcesContent":["export const GridClass = {\n\troot: 'gov-grid',\n}\n\nexport const GridItemClass = {\n\troot: 'gov-grid-item',\n}\n"],"version":3}

@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-button.types.js","sourceRoot":"","sources":["../../../../../../../src/components/gov-button/button/gov-button.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../../types/event.types\"\n\nexport interface ButtonEvent extends GovBaseEvent {\n\tref: HTMLGovButtonElement\n}\n\n"]}

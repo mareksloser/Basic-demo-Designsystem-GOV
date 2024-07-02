@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-form-checkbox.types.js","sourceRoot":"","sources":["../../../../../../../src/components/gov-form/checkbox/gov-form-checkbox.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../../types/event.types\"\n\nexport interface FormCheckboxEvent extends GovBaseEvent {\n\tchecked: boolean,\n\tvalue: string\n}\n"]}

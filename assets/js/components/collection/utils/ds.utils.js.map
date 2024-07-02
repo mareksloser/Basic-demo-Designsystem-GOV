@@ -1,0 +1,1 @@
+{"version":3,"file":"ds.utils.js","sourceRoot":"","sources":["../../../../../src/utils/ds.utils.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,oBAAoB,CAAA;AAE5C,MAAM,CAAC,MAAM,SAAS,GAAG,GAAW,EAAE;EACrC,OAAO,OAAO,CAAA;AACf,CAAC,CAAA","sourcesContent":["import { version } from '../../package.json'\n\nexport const dsVersion = (): string => {\n\treturn version\n}\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-dropdown.types.js","sourceRoot":"","sources":["../../../../../../../src/components/gov-button/dropdown/gov-dropdown.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../../types/event.types\"\n\nexport interface DropdownEvent extends GovBaseEvent {\n\topen: boolean\n}\n"]}

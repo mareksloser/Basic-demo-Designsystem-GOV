@@ -1,0 +1,20 @@
+.scrollbar-fix {
+  .body-fixed {
+    padding-right: 15px;
+
+    #main-header {
+      padding-right: 15px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+
+  &-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+}

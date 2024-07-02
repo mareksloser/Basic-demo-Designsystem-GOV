@@ -1,0 +1,62 @@
+import { g as govWarningLog } from './gov.log-49da0221.js';
+import { s as splitByWhitespace } from './string.utils-f268fc6b.js';
+import { d as documentNode } from './win-1dbd3f5c.js';
+
+const validateWcagProp = (value, propName, component) => {
+  if (value === undefined || String(value).length === 0) {
+    govWarningLog(`[${component}]: The (${propName}) attribute is important for correct accessibility.`);
+  }
+};
+const validateWcagRef = (referenceId, name, component) => {
+  if (typeof referenceId === 'undefined' || referenceId === undefined) {
+    return true;
+  }
+  if (String(referenceId).length === 0) {
+    govWarningLog(`[${component}]: Attribute (${name}) is defined with an empty value.`);
+    return false;
+  }
+  let strings = [];
+  const referenceIds = splitByWhitespace(referenceId);
+  if (Array.isArray(referenceIds)) {
+    strings = referenceIds.filter(function (e) {
+      return e.trim().length > 0;
+    });
+  }
+  return !!strings.filter(referenceId => {
+    if (documentNode().getElementById(referenceId) === null) {
+      //govWarningLog(`[${component}][${name}]: Reference to element with id (${referenceId}) does not exist.`)
+      return false;
+    }
+    else {
+      return true;
+    }
+  }).length;
+};
+const validateWcagLabelFor = (inputId, labelledBy, component) => {
+  const labelEl = documentNode().querySelector(`[for=${inputId}]`);
+  if (labelEl === null) {
+    const labelledByEl = documentNode().getElementById(labelledBy);
+    if (labelledByEl === null) {
+      govWarningLog(`[${component}]: The form element has no defined wcag-label or wcag-labelled-by attribute.`);
+      return false;
+    }
+  }
+  return true;
+};
+const validateWcagLabel = (label, labelledBy, component) => {
+  if (typeof label === 'string' && label.length > 0) {
+    return true;
+  }
+  if (typeof labelledBy === 'string' && labelledBy.length > 0) {
+    const labelledByEl = documentNode().getElementById(labelledBy);
+    if (labelledByEl) {
+      return true;
+    }
+  }
+  govWarningLog(`[${component}]: The element has no defined wcag-label or wcag-labelled-by attribute.`);
+  return false;
+};
+
+export { validateWcagRef as a, validateWcagLabelFor as b, validateWcagProp as c, validateWcagLabel as v };
+
+//# sourceMappingURL=wcag-7d25e12b.js.map

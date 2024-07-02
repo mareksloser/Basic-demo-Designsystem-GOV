@@ -1,0 +1,39 @@
+$class: '.hamburger-nav';
+
+@layer components {
+  #{$class} {
+
+    &--close {
+      @apply hidden relative;
+    }
+
+    &--modal {
+
+      &.is-open {
+        @apply block fixed inset-0 bg-neutral-white;
+
+        & > .modal-content {
+          @apply block mx-4 h-full overflow-scroll;
+        }
+      }
+    }
+
+    &__mobile-nav, &__mobile-top-nav {
+      display: none;
+    }
+  }
+
+  .hamburger-nav__is-open {
+    @apply overflow-hidden;
+
+    #{$class} {
+      @apply hidden;
+
+      &--close {
+        @apply block;
+      }
+    }
+
+  }
+}
+

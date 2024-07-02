@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-form-input.types.js","sourceRoot":"","sources":["../../../../../../../src/components/gov-form/input/gov-form-input.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../../types/event.types\"\n\nexport interface FormInputEvent extends GovBaseEvent {\n\tvalue: string\n}\n"]}

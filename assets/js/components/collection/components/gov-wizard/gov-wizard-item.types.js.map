@@ -1,0 +1,1 @@
+{"version":3,"file":"gov-wizard-item.types.js","sourceRoot":"","sources":["../../../../../../src/components/gov-wizard/gov-wizard-item.types.ts"],"names":[],"mappings":"","sourcesContent":["import { GovBaseEvent } from \"../../types/event.types\"\n\nexport interface WizardItemEvent extends GovBaseEvent {\n\texpanded: boolean\n}\n"]}

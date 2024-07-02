@@ -1,0 +1,28 @@
+$class: '.tile-mobile';
+
+@layer components {
+  #{$class} {
+    @apply flex items-center gap-2 p-2 hover:bg-primary-200;
+
+    gov-icon {
+      width: calc(var(--gov-text-m-font-size) * 1.2);
+      height: calc(var(--gov-text-m-font-size) * 1.2);
+    }
+
+    &__label {
+      @apply block bg-secondary-300 text-secondary-700 pl-2;
+    }
+
+    &__content-links {
+      @apply pl-2;
+    }
+
+    &::after {
+      content: "";
+      background: url('../icons/basic/chevron-right.svg') no-repeat;
+      @include recolor($color-primary, 1);
+
+      @apply block ml-auto bg-contain h-4 w-4;
+    }
+  }
+}
